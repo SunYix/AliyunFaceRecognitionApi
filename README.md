@@ -1,6 +1,6 @@
 # AliyunFaceRecognitionApi
 
-####采用阿里云提供的人脸检测识别api
+#### 采用阿里云提供的人脸检测识别api
 
 
 ``` 
@@ -63,7 +63,7 @@
     [task resume];
     
     
-#####需要注意是请求头中要加Authorization和中间的md5、base64加签
+##### 需要注意是请求头中要加Authorization和中间的md5、base64加签
       
    如果您喜欢这个阿里云人脸检测识别Demo的话，希望给个star～～～～～
            
