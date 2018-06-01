@@ -61,8 +61,10 @@
     }];
     
     [task resume];
-    ```
+    
+    
 #####需要注意是请求头中要加Authorization和中间的md5、base64加签
-      如果您喜欢这个阿里云人脸检测识别Demo的话，希望给个star～～～～～
+      
+   如果您喜欢这个阿里云人脸检测识别Demo的话，希望给个star～～～～～
            
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString: url]  cachePolicy:NSURLRequestReloadIgnoringLocalCacheData  timeoutInterval:  10];
+
