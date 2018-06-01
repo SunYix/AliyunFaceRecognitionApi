@@ -3,7 +3,7 @@
 #### 采用阿里云提供的人脸检测识别api
 
 
-``` 
+
     std::string ak_id = "此处填写阿里云的id";
     std::string ak_secret = "此处填写阿里云的secret";
     //OC
@@ -61,10 +61,11 @@
     }];
     
     [task resume];
-    
-    
-##### 需要注意是请求头中要加Authorization和中间的md5、base64加签
+  
+  
+  
+#### 需要注意是请求头中要加Authorization和中间的md5、base64加签
       
-   如果您喜欢这个阿里云人脸检测识别Demo的话，希望给个star～～～～～
+如果您喜欢这个阿里云人脸检测识别Demo的话，希望给个star～～～～～
            
 
