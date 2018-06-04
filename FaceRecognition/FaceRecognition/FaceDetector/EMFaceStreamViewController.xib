@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EMFaceStreamViewController">
+            <connections>
+                <outlet property="againWriteBut" destination="hkO-x3-spX" id="KuQ-pG-ihJ"/>
+                <outlet property="imageBottomView" destination="LFZ-FQ-XdT" id="cUL-hD-fdL"/>
+                <outlet property="submitInfoBut" destination="uFg-l4-RyJ" id="Ayo-JH-unf"/>
+                <outlet property="submitPhotoBut" destination="mO2-HH-EBZ" id="GH0-Zf-bIt"/>
+                <outlet property="textLabel" destination="pd7-3h-Cgl" id="L3p-hn-GWb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="new_register_bg" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kEs-8Q-Bvg">
+                    <rect key="frame" x="-30" y="-55" width="380" height="663"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="采集面部信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZPf-Sy-cBn">
+                    <rect key="frame" x="108" y="30" width="104" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="faceverify_bg" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LFZ-FQ-XdT">
+                    <rect key="frame" x="0.0" y="408" width="320" height="160"/>
+                    <constraints>
+                        <constraint firstAttribute="height" priority="900" constant="160" id="UJ7-st-d1d"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohe-pd-h16">
+                    <rect key="frame" x="15" y="23" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="9KV-jW-4s6"/>
+                        <constraint firstAttribute="width" constant="35" id="krw-cj-yHb"/>
+                    </constraints>
+                    <state key="normal" image="close"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mO2-HH-EBZ">
+                    <rect key="frame" x="130.5" y="423.5" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="AJ8-2S-pSU"/>
+                        <constraint firstAttribute="height" constant="60" id="JZN-cQ-8Pm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <state key="normal" backgroundImage="submit_but_bg">
+                        <color key="titleColor" red="0.41960784309999999" green="0.78039215689999997" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="startPhoto:" destination="-1" eventType="touchUpInside" id="XIl-BF-eY6"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张嘴" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pd7-3h-Cgl">
+                    <rect key="frame" x="20" y="355" width="281" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkO-x3-spX">
+                    <rect key="frame" x="22.5" y="494" width="125" height="44"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="重新填写" backgroundImage="new_againwrite_bg">
+                        <color key="titleColor" red="0.41960784313725491" green="0.7803921568627451" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFg-l4-RyJ">
+                    <rect key="frame" x="172.5" y="494" width="125" height="44"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="提交信息" backgroundImage="new_faceRecognition_submit">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="hkO-x3-spX" firstAttribute="centerX" secondItem="LFZ-FQ-XdT" secondAttribute="centerX" constant="-75" id="0nD-Sr-mTt"/>
+                <constraint firstAttribute="bottom" secondItem="hkO-x3-spX" secondAttribute="bottom" constant="30" id="2HD-JR-eJN"/>
+                <constraint firstItem="mO2-HH-EBZ" firstAttribute="centerX" secondItem="LFZ-FQ-XdT" secondAttribute="centerX" id="8WI-Fc-j24"/>
+                <constraint firstItem="pd7-3h-Cgl" firstAttribute="centerX" secondItem="kEs-8Q-Bvg" secondAttribute="centerX" id="AkO-Zq-iz1"/>
+                <constraint firstItem="LFZ-FQ-XdT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ncc-S0-f1o"/>
+                <constraint firstAttribute="bottom" secondItem="uFg-l4-RyJ" secondAttribute="bottom" constant="30" id="Oeb-sd-3Us"/>
+                <constraint firstAttribute="bottom" secondItem="kEs-8Q-Bvg" secondAttribute="bottom" constant="-40" id="PaZ-cQ-nQ7"/>
+                <constraint firstAttribute="trailing" secondItem="kEs-8Q-Bvg" secondAttribute="trailing" constant="-30" id="Qda-Uq-F9p"/>
+                <constraint firstItem="ohe-pd-h16" firstAttribute="centerY" secondItem="ZPf-Sy-cBn" secondAttribute="centerY" id="ROs-xO-FL9"/>
+                <constraint firstItem="mO2-HH-EBZ" firstAttribute="centerY" secondItem="LFZ-FQ-XdT" secondAttribute="centerY" constant="-35" id="Rfw-9O-bne"/>
+                <constraint firstItem="uFg-l4-RyJ" firstAttribute="centerX" secondItem="LFZ-FQ-XdT" secondAttribute="centerX" constant="75" id="Rh2-RA-Qi4"/>
+                <constraint firstAttribute="trailing" secondItem="LFZ-FQ-XdT" secondAttribute="trailing" id="Svy-tq-Gzb"/>
+                <constraint firstItem="LFZ-FQ-XdT" firstAttribute="top" secondItem="pd7-3h-Cgl" secondAttribute="bottom" constant="35" id="YI9-Tb-uzg"/>
+                <constraint firstAttribute="bottom" secondItem="LFZ-FQ-XdT" secondAttribute="bottom" id="Yuh-hk-1we"/>
+                <constraint firstItem="kEs-8Q-Bvg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-30" id="blU-5Q-b7S"/>
+                <constraint firstItem="ohe-pd-h16" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="d20-yR-yZW"/>
+                <constraint firstItem="kEs-8Q-Bvg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-55" id="jW7-2Z-5pQ"/>
+                <constraint firstItem="ZPf-Sy-cBn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="pdP-Cj-ZrF"/>
+                <constraint firstItem="ZPf-Sy-cBn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qyp-Ja-QMB"/>
+                <constraint firstItem="pd7-3h-Cgl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="txw-ZS-6jA"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="close" width="10" height="10"/>
+        <image name="faceverify_bg" width="320" height="159"/>
+        <image name="new_againwrite_bg" width="125" height="44"/>
+        <image name="new_faceRecognition_submit" width="125" height="44"/>
+        <image name="new_register_bg" width="480" height="852"/>
+        <image name="submit_but_bg" width="67" height="67"/>
+    </resources>
+</document>
